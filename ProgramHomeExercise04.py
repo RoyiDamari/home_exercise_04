@@ -210,26 +210,22 @@ for i in range(start_point,end_point + 1, skip_num):
 # Exercise 5 + Bonus question
 iq_num: int = int(input("Please enter your IQ number: "));
 count: int = 0;
-sum: int = 0;
+total: int = 0;
 highest_num: int = iq_num;
 lowest_num: int = iq_num;
 
 while iq_num >= 30 and iq_num <= 300:
     if iq_num >= highest_num:
         highest_num = iq_num;
-    else:
-        highest_num = highest_num;
 
     if iq_num <= lowest_num:
         lowest_num = iq_num;
-    else:
-        lowest_num = lowest_num;
 
-    sum += iq_num;
+    total += iq_num;
     count += 1;
     iq_num: int = int(input("Please enter your IQ number: "));
 
-avg_iq: float = sum / count;
+avg_iq: float = total / count;
 print(f"The average IQ of the group is {avg_iq:.2f}");
 print(f"The highest IQ score of the group is {highest_num}");
 print(f"The lowest IQ score of the group is {lowest_num}");
@@ -237,26 +233,22 @@ print("one year of python training has been completed...");
 
 iq_num_new: int = int(input("Please enter your IQ number: "));
 count_new: int = 0;
-sum_new: int = 0;
+total_new: int = 0;
 highest_num_new: int = iq_num_new;
 lowest_num_new: int = iq_num_new;
 
 while iq_num_new >= 30 and iq_num_new <= 300:
     if iq_num_new >= highest_num_new:
         highest_num_new = iq_num_new;
-    else:
-        highest_num_new = highest_num_new;
 
     if iq_num_new <= lowest_num_new:
         lowest_num_new = iq_num_new;
-    else:
-        lowest_num_new = lowest_num_new;
 
-    sum_new += iq_num_new;
+    total_new += iq_num_new;
     count_new += 1;
     iq_num_new: int = int(input("Please enter your IQ number: "));
 
-avg_iq_new: float = sum_new / count_new;
+avg_iq_new: float = total_new / count_new;
 diff: float = avg_iq_new - avg_iq
 print(f"The average IQ of the group is {avg_iq_new:.2f}");
 print(f"The difference in IQ score between the 2 groups is {diff:.2f}");
